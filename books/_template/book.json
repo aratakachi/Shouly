@@ -1,0 +1,18 @@
+{
+  "id": "id-unik-buku",
+  "title": "Judul Novel",
+  "author": "Nama Penulis",
+  "origin": "Asal penulis (opsional)",
+  "genre": [
+    "Genre"
+  ],
+  "synopsis": "Sinopsis novel.",
+  "cover": "cover.jpg",
+  "featured": false,
+  "chapters": [
+    {
+      "title": "Bab 1 — Judul Bab",
+      "file": "chapters/bab-1.html"
+    }
+  ]
+}

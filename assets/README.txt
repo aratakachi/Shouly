@@ -1,0 +1,1 @@
+Logo SHOULY yang diberikan sudah disertakan sebagai logo.webp. Untuk menggantinya, timpa file ini dengan logo baru bernama logo.webp.

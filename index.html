@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#171044" />
+
+    <title>SHOULY — Shousetsu Library | Baca Novel Digital Indonesia</title>
+
+    <meta
+      name="description"
+      content="Jelajahi SHOULY, Shousetsu Library, platform membaca novel digital yang menghadirkan cerita menarik dan karya penulis independen Indonesia."
+    />
+    <meta
+      name="keywords"
+      content="SHOULY, Shousetsu Library, baca novel online, novel digital, novel Indonesia, cerita fiksi, novel fantasi, karya penulis Indonesia"
+    />
+    <meta name="author" content="SHOULY" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="application-name" content="SHOULY" />
+
+    <link rel="canonical" href="https://DOMAIN-KAMU/" />
+
+    <link rel="icon" type="image/png" href="/favicon.png" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="SHOULY — Shousetsu Library" />
+    <meta
+      property="og:description"
+      content="Temukan cerita, jelajahi dunia. Baca berbagai novel digital dan karya penulis Indonesia bersama SHOULY."
+    />
+    <meta property="og:site_name" content="SHOULY" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:url" content="https://DOMAIN-KAMU/" />
+    <meta property="og:image" content="https://DOMAIN-KAMU/og-image.jpg" />
+    <meta property="og:image:alt" content="SHOULY — Shousetsu Library" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SHOULY — Shousetsu Library" />
+    <meta
+      name="twitter:description"
+      content="Temukan cerita, jelajahi dunia bersama SHOULY."
+    />
+    <meta name="twitter:image" content="https://DOMAIN-KAMU/og-image.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#home">
+        <img
+          src="assets/logo.webp"
+          alt="SHOULY — Shousetsu Library"
+          class="brand-logo"
+          onerror="
+            this.hidden = true;
+            this.nextElementSibling.hidden = false;
+          "
+        />
+        <span class="brand-fallback" hidden>
+          <b>SHOULY</b>
+          <small>SHOUSETSU LIBRARY</small>
+        </span>
+      </a>
+      <button
+        class="search-toggle"
+        id="searchToggle"
+        aria-label="Buka pencarian"
+      >
+        <span>⌕</span>
+      </button>
+
+      <div class="search-box" id="searchBox">
+        <button class="search-back" id="searchBack" aria-label="Kembali">
+          ←
+        </button>
+        <input
+          id="searchInput"
+          type="search"
+          placeholder="Cari judul atau penulis..."
+        />
+        <button
+          class="search-clear"
+          id="searchClear"
+          aria-label="Hapus pencarian"
+        >
+          ×
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section id="homePage" class="page active">
+        <section class="welcome">
+          <h1>
+            Tempatnya Dunia<br />
+            Novel dan Cerita
+          </h1>
+          <p>Temukan novel dan cerita pilihan untuk menemani waktumu.</p>
+          <button class="primary-button" id="exploreButton">Jelajahi</button>
+        </section>
+
+        <section class="featured-section">
+          <div class="section-heading">
+            <h2>Pilihan untukmu</h2>
+            <span>Unggulan</span>
+          </div>
+          <div id="featuredContainer"></div>
+        </section>
+
+        <section class="catalog-section" id="catalog">
+          <div class="section-heading">
+            <h2>Jelajahi Novel</h2>
+            <span id="catalogCount">0 karya</span>
+          </div>
+          <div id="bookGrid" class="book-grid"></div>
+          <p class="muted-note">
+            Koleksi SHOULY bertambah seiring karya penulis yang dikurasi.
+          </p>
+        </section>
+
+        <section class="contribute-card">
+          <h2>Punya cerita untuk dibagikan?</h2>
+          <p>SHOULY membuka ruang bagi penulis independen dan pelajar.</p>
+          <p class="small-note">
+            Untuk versi awal, pengiriman karya dilakukan melalui pengelola
+            SHOULY.
+          </p>
+        </section>
+      </section>
+
+      <section id="searchPage" class="page">
+        <button class="back-button" id="searchPageBack">
+          ← <span>Kembali</span>
+        </button>
+
+        <div class="search-results-heading">
+          <h1>Hasil Pencarian</h1>
+          <p id="searchResultInfo"></p>
+        </div>
+
+        <div id="searchResultsGrid" class="book-grid"></div>
+      </section>
+
+      <section id="detailPage" class="page">
+        <button class="back-button" id="detailBack">
+          ← <span>Kembali</span>
+        </button>
+        <div id="detailContent"></div>
+      </section>
+
+      <section id="readerPage" class="page reader-page">
+        <div class="reader-top">
+          <button class="back-button" id="readerBack">
+            ← <span>Detail buku</span>
+          </button>
+        </div>
+        <div class="reader-content">
+          <p class="eyebrow" id="chapterNumber">BAB 01</p>
+          <h1 id="chapterTitle">Judul Bab</h1>
+          <article id="chapterBody" class="chapter-body"></article>
+        </div>
+        <nav class="reader-nav">
+          <button class="secondary-button" id="prevChapter">
+            ← Sebelumnya
+          </button>
+          <span id="chapterProgress">1 / 1</span>
+          <button class="secondary-button" id="nextChapter">
+            Selanjutnya →
+          </button>
+        </nav>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2026 Shousetsu Library <br> Designed & Developed by
+        <strong>Arata Kachi</strong> (Dede Sukirman).
+      </p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "id": "novel-pertama",
+  "title": "Crowns Of Narottama",
+  "author": "Yoga Pratama Ananda",
+  "origin": "SMK Negeri 19 Samarinda",
+  "genre": ["Fantasi", "Sihir", "Supernatural"],
+  "synopsis": "Panggil aku Ken Aranvell. Aku hidup di dunia di mana, semua dataran, semua langit, semua lautan, semua rasnya dan makhluknya, serta semua baitnya, semuanya bersama-sama membentuk dunia yang indah, bersama-sama membentuk sebuah kehidupan, dan bersama-sama membentuk dunia bernama Wiase.Saat itu, hari yang cerah dan dingin di tepi Danau Lave, namun raungan serta ledakan memecah ketenangan Kota Lave. Apa yang sebenarnya terjadi?",
+  "cover": "cover.jpg",
+  "featured": true,
+  "chapters": [
+    {
+      "title": "Bab 1 : Sebagus apa dunia ini?",
+      "file": "chapters/bab-1.html"
+    },
+    {
+      "title": "Bab 2 : Birunya Lave",
+      "file": "chapters/bab-2.html"
+    },
+    {
+      "title": "Bab 3 : Rembulan Merah",
+      "file": "chapters/bab-3.html"
+    },
+    {
+      "title": "Bab 4 : Dunia?",
+      "file": "chapters/bab-4.html"
+    }
+  ]
+}
